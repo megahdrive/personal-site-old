@@ -4,6 +4,14 @@ require $_SERVER['DOCUMENT_ROOT'] . "/lib/lib.php";
 
 use megahdrive\PersonalSite\PageBuilder;
 
+$enjoyedThings = [
+    "Honkai: Star Rail",
+    "Programming",
+    "<i>Politics</i> <img src=\"/static/terrified.webp\" alt=\"Terrified emoji\" class=\"emoji\">",
+    "Japanese culture",
+    "Reading manga and SSLNs"
+];
+
 $pageBuilder = new PageBuilder("Konnichiwa!", "The landing page of megahdrive.com");
 $pageBuilder->BuildHeader();
 ?>
@@ -15,10 +23,11 @@ $pageBuilder->BuildHeader();
 <p>I'm a backend programmer from Michigan. Here's some stuff I enjoy;</p>
 
 <ul>
-    <li>Honkai: Star Rail</li>
-    <li>Programming</li>
-    <li><i>Politics</i> <img src="/static/terrified.webp" alt="Terrified emoji" class="emoji"></li>
+    <?php foreach ($enjoyedThings as $thing) {?>
+        <li><?=$thing?></li>
+    <?php }?>
 </ul>
+
 <?php
 $pageBuilder->BuildFooter();
 ?>

@@ -33,6 +33,10 @@ class General {
         extract($variables);
         include $file;
     }
+
+    static function RandomArrKey($array) {
+        return $array[array_rand($array)];
+    }
 }
 
 class Path {
@@ -46,7 +50,6 @@ class Path {
 }
 
 class BellsAndWhistles {
-
     private static $PageSplashes = [
         "Get a <a href=\"https://www.pckeyboard.com\">Unicomp!</a>",
         "Follow noobas on twitter",
@@ -58,9 +61,10 @@ class BellsAndWhistles {
         "Today is a good day~",
         "March 7th!",
         "This website is not property of miHoYo, Co., Ltd. or affiliates.",
+        "I built a pagebuilder for this one-page website."
     ];
 
     static function ResolveSplash() {
-        return self::$PageSplashes[array_rand(self::$PageSplashes)];
+        return General::RandomArrKey(self::$PageSplashes);
     }
 }
