@@ -7,12 +7,10 @@ use megahdrive\PersonalSite\PageBuilder;
 $enjoyedThings = [
     "Honkai: Star Rail",
     "Programming",
-    "<i>Politics</i> <img src=\"/static/terrified.webp\" alt=\"Terrified emoji\" class=\"emoji\">",
-    "Japanese culture",
-    "Reading manga and SSLNs"
+    "Reading manga and light novels",
 ];
 
-$pageBuilder = new PageBuilder("Konnichiwa!", "The landing page of megahdrive.com");
+$pageBuilder = new PageBuilder("Landing", "Landing page of megahdrive.com");
 $pageBuilder->BuildHeader();
 ?>
 <div class="homepage-header">

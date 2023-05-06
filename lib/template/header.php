@@ -7,7 +7,7 @@
         <meta name="description" content="<?= $pageDescription ?>">
         <meta name="theme-color" content="#4285f4" />
 
-        <!--<script src="/static/fa.min.js"></script>-->
+        <script src="/static/fa.min.js"></script>
         <link rel="stylesheet" href="/static/site.css">
         <link rel="stylesheet" href="/static/home.css">
     </head>
