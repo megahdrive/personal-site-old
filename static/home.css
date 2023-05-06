@@ -1,0 +1,15 @@
+.homepage-header {
+    display: grid;
+    grid-template-columns: 1fr 10%;
+    grid-template-rows: 1fr;
+  }
+  
+  .homepage-header h2 {
+    grid-column: 1;
+    grid-row: 1;
+  }
+  
+  .homepage-header img {
+    grid-column: 2;
+    grid-row: 1;
+  }
